@@ -20,7 +20,7 @@ namespace client
             }
 
             // request token
-            var tokenClient = new TokenClient(disco.TokenEndpoint, "client", "secret");
+            var tokenClient = new TokenClient(disco.TokenEndpoint, "clientconsole", "secretconsole");
             var tokenResponse = await tokenClient.RequestClientCredentialsAsync("api1");
 
             if (tokenResponse.IsError)
