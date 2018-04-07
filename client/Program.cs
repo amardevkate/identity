@@ -12,7 +12,7 @@ namespace client
 
         private static async Task MainAsync()
         {
-            var disco = await DiscoveryClient.GetAsync("http://localhost:5000");
+            var disco = await DiscoveryClient.GetAsync("https://identityserveramardevkate.azurewebsites.net/");
             if (disco.IsError)
             {
                 Console.WriteLine(disco.Error);
